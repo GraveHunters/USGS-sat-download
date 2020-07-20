@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 urlencode() {
     # urlencode <string>
     old_lc_collate=$LC_COLLATE
