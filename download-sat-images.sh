@@ -27,21 +27,32 @@ function help(){
   echo
   echo "Usage"
   echo
-  echo "    ./download-sat-images.sh [FILE] [-h|--help] \\"
-  echo "               (-d|--debug) \\"
+  echo "    ./download-sat-images.sh [-h|--help] \\"
   echo "               (-e=<engine>|--engine=<engine>)"
+  echo "               (-l=<line>|--line=<line>)"
+  echo "               (-li=<login url>|--login=<login url>)"
+  echo "              [FILE]"
   echo
   echo "Options"
   echo
   echo "    -h, --help"
   echo "        Show this information"
-  echo "    -d, --debug"
-  echo "        optional. \\"
-  echo "        echo variables during run. \\"
   echo "    -e, --engine"
   echo "        optional. \\"
   echo "        define which engine to use (CURL or WGET). \\"
-  echo "        (ie. (-e=CURL|-e=WGET))"
+  echo "        (ie. (-e=CURL|-e=WGET)) \\"
+  echo "        default CURL \\"
+  echo "    -l, --line"
+  echo "        optional. \\"
+  echo "        define which column in the USGS CSV \\"
+  echo "        contains the 'Browse Link' data. \\"
+  echo "        (ie. (-l=32|-line=32)) \\"
+  echo "        default 42 \\"
+  echo "    -li, --login"
+  echo "        optional. \\"
+  echo "        define the login url for USGS service. \\"
+  echo "        (ie. (-li=https://somesite/login/|-login=https://somesite/login/)) \\"
+  echo "        default https://ers.cr.usgs.gov/login/ \\"
   echo
 }
 
